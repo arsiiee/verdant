@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.verdant.DashboardFeature">
+   <children>
+      <Pane prefHeight="411.0" prefWidth="171.0">
+         <children>
+            <TextField alignment="CENTER" layoutX="18.0" layoutY="14.0" prefHeight="25.0" prefWidth="135.0" text="Verdant" />
+            <Button layoutX="18.0" layoutY="60.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="135.0" text="Dashboard" />
+            <Button layoutX="18.0" layoutY="127.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Log" />
+            <Button layoutX="61.0" layoutY="362.0" mnemonicParsing="false" text="Profile" />
+            <Button layoutX="18.0" layoutY="93.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Hub" />
+         </children></Pane>
+      <Separator layoutX="151.0" orientation="VERTICAL" prefHeight="411.0" prefWidth="40.0" />
+      <Pane layoutX="171.0" prefHeight="411.0" prefWidth="431.0">
+         <children>
+            <Pane layoutX="301.0" layoutY="1.0" prefHeight="411.0" prefWidth="129.0">
+               <children>
+                  <TextField layoutX="12.0" layoutY="14.0" prefHeight="25.0" prefWidth="105.0" text="To-Do:" />
+                  <Pane layoutX="6.0" layoutY="47.0" prefHeight="70.0" prefWidth="118.0" style="-fx-background-color: #BFD641; -fx-border-radius: 5;" />
+                  <Pane layoutX="6.0" layoutY="125.0" prefHeight="70.0" prefWidth="118.0" style="-fx-background-color: #BFD641; -fx-border-radius: 5;" />
+               </children></Pane>
+            <ScrollPane layoutX="-1.0" prefHeight="411.0" prefWidth="302.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="456.0" prefWidth="286.0">
+                     <children>
+                        <Pane layoutX="7.0" layoutY="5.0" prefHeight="117.0" prefWidth="273.0" style="-fx-background-color: #78A0F7; -fx-border-radius: 5;" />
+                        <Pane layoutX="7.0" layoutY="128.0" prefHeight="100.0" prefWidth="273.0" style="-fx-background-color: #BFD641; -fx-border-radius: 5;" />
+                        <Pane layoutX="7.0" layoutY="236.0" prefHeight="96.0" prefWidth="273.0" style="-fx-background-color: #7DDA58; -fx-border-radius: 5;" />
+                        <Pane layoutX="8.0" layoutY="372.0" prefHeight="103.0" prefWidth="272.0" style="-fx-border-radius: 5; -fx-border-color: #BFD641;" />
+                        <TextField layoutX="7.0" layoutY="339.0" text="Recent Posts" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
