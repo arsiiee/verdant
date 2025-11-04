@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
@@ -24,7 +25,40 @@
                     <content>
                         <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="470.0" prefWidth="415.0">
                             <children>
-                                <Separator layoutX="-3.0" orientation="VERTICAL" prefHeight="411.0" prefWidth="0.0" style="-fx-background-color: green;" />
+                        <Pane prefHeight="51.0" prefWidth="415.0">
+                           <children>
+                              <Separator layoutY="50.0" prefWidth="415.0" style="-fx-background-color: #364025;" />
+                              <Label layoutX="14.0" layoutY="16.0" text="Forums">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ButtonBar layoutX="67.0" layoutY="14.0" prefHeight="25.0" prefWidth="242.0">
+                                <buttons>
+                                    <TextField prefHeight="25.0" prefWidth="129.0" />
+                                  <Button mnemonicParsing="false" text="Button" />
+                                </buttons>
+                              </ButtonBar>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="14.0" layoutY="69.0" prefHeight="51.0" prefWidth="387.0" style="-fx-border-color: #364025; -fx-border-radius: 5;">
+                           <children>
+                              <TextArea layoutX="4.0" layoutY="3.0" prefHeight="46.0" prefWidth="378.0">
+                                 <padding>
+                                    <Insets bottom="4.0" left="5.0" right="5.0" top="4.0" />
+                                 </padding></TextArea>
+                           </children>
+                        </Pane>
+                        <Separator layoutX="-3.0" orientation="VERTICAL" prefHeight="411.0" prefWidth="0.0" style="-fx-background-color: #364025;" />
+                        <Pane layoutX="60.0" layoutY="133.0" prefHeight="51.0" prefWidth="341.0" style="-fx-border-radius: 5; -fx-background-color: #E6D7C4; -fx-background-radius: 5;">
+                           <children>
+                              <TextArea layoutX="5.0" layoutY="3.0" prefHeight="25.0" prefWidth="331.0">
+                                 <padding>
+                                    <Insets bottom="4.0" left="5.0" right="5.0" top="4.0" />
+                                 </padding>
+                              </TextArea>
+                           </children>
+                        </Pane>
                             </children></AnchorPane>
                     </content>
                 </ScrollPane>
