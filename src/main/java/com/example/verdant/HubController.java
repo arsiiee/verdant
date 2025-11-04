@@ -3,7 +3,7 @@ package com.example.verdant;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class NewToDoController {
+public class HubController {
     @FXML
     private Label welcomeText;
 
