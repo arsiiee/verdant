@@ -7,10 +7,9 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.verdant.DashboardFeature">
     <children>
-      <SplitPane />
-      <SplitPane dividerPositions="0.29797979797979796" prefHeight="398.0" prefWidth="600.0">
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="400.0" prefWidth="600.0">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="171.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="175.0">
                <children>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="16.0" prefWidth="135.0" text="Verdant">
                      <font>
@@ -27,7 +26,7 @@
                </children></AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="416.0">
                <children>
-                      <Pane layoutX="279.0" layoutY="3.0" prefHeight="390.0" prefWidth="135.0" style="-fx-border-color: green; -fx-border-radius: 5;">
+                      <Pane layoutX="280.0" layoutY="3.0" prefHeight="390.0" prefWidth="135.0" style="-fx-border-color: green; -fx-border-radius: 5;">
                           <children>
                               <Pane layoutX="13.0" layoutY="39.0" prefHeight="65.0" prefWidth="110.0" style="-fx-background-color: #BFD641; -fx-border-radius: 5; -fx-background-radius: 5;" />
                               <Pane layoutX="13.0" layoutY="109.0" prefHeight="65.0" prefWidth="110.0" style="-fx-background-color: #BFD641; -fx-border-radius: 5; -fx-background-radius: 5;" />
@@ -41,7 +40,7 @@
                         </Label>
                           </children>
                   </Pane>
-                  <ScrollPane prefHeight="396.0" prefWidth="278.0">
+                  <ScrollPane prefHeight="398.0" prefWidth="278.0">
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="418.0" prefWidth="262.0">
                            <children>
