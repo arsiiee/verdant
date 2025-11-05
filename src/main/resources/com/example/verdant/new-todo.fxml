@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.verdant.NewTodo">
+   <children>
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="400.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="171.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="16.0" prefWidth="135.0" text="Verdant">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </padding>
+                  </Label>
+                  <Button layoutX="20.0" layoutY="53.0" mnemonicParsing="false" prefWidth="135.0" text="Dashboard" />
+                  <Button layoutX="20.0" layoutY="88.0" mnemonicParsing="false" prefWidth="135.0" text="Log" />
+                  <Button layoutX="20.0" layoutY="123.0" mnemonicParsing="false" prefWidth="135.0" text="Hub" />
+                  <Button layoutX="20.0" layoutY="359.0" mnemonicParsing="false" prefWidth="135.0" text="Profile" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="416.0" />
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

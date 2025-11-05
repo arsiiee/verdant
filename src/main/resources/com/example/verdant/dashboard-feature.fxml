@@ -7,43 +7,31 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.verdant.DashboardFeature">
     <children>
-        <Pane prefHeight="411.0" prefWidth="171.0">
-            <children>
-                <Button alignment="CENTER" layoutX="18.0" layoutY="60.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="135.0" text="Dashboard" />
-                <Button alignment="CENTER" layoutX="18.0" layoutY="93.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Log" />
-                <Button alignment="CENTER" layoutX="18.0" layoutY="362.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="135.0" text="Profile" />
-                <Button alignment="CENTER" layoutX="18.0" layoutY="126.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Hub" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="14.0" prefWidth="135.0" text="Verdant">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            </children></Pane>
-        <Pane layoutX="171.0" prefHeight="411.0" prefWidth="431.0">
-            <children>
-                <Pane layoutX="296.0" prefHeight="411.0" prefWidth="135.0">
-                    <children>
-                        <Pane layoutX="13.0" layoutY="48.0" prefHeight="65.0" prefWidth="110.0" style="-fx-background-color: #BFD641; -fx-border-radius: 5; -fx-background-radius: 5;" />
-                        <Pane layoutX="13.0" layoutY="121.0" prefHeight="65.0" prefWidth="110.0" style="-fx-background-color: #BFD641; -fx-border-radius: 5; -fx-background-radius: 5;" />
-                  <Label layoutX="13.0" layoutY="17.0" text="To-Do:">
+      <SplitPane />
+      <SplitPane dividerPositions="0.29797979797979796" prefHeight="398.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="171.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="14.0" prefHeight="16.0" prefWidth="135.0" text="Verdant">
                      <font>
-                        <Font size="14.0" />
+                        <Font size="18.0" />
                      </font>
                      <padding>
-                        <Insets left="5.0" right="5.0" />
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
                      </padding>
                   </Label>
-                    </children></Pane>
-                <ScrollPane layoutX="-1.0" prefHeight="411.0" prefWidth="297.0">
-                    <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="456.0" prefWidth="282.0">
-                            <children>
-                                <Pane layoutX="11.0" layoutY="11.0" prefHeight="117.0" prefWidth="266.0" style="-fx-background-color: #78A0F7; -fx-border-radius: 5; -fx-background-radius: 5;" />
-                                <Pane layoutX="11.0" layoutY="136.0" prefHeight="100.0" prefWidth="266.0" style="-fx-background-color: #BFD641; -fx-border-radius: 5; -fx-background-radius: 5;" />
-                                <Pane layoutX="11.0" layoutY="243.0" prefHeight="96.0" prefWidth="266.0" style="-fx-background-color: #7DDA58; -fx-border-radius: 5; -fx-background-radius: 5;" />
-                                <Pane layoutX="11.0" layoutY="372.0" prefHeight="103.0" prefWidth="266.0" style="-fx-border-radius: 5; -fx-border-color: #BFD641;" />
-                          <Separator layoutX="-3.0" orientation="VERTICAL" prefHeight="411.0" prefWidth="0.0" style="-fx-background-color: #364025;" />
-                        <Label layoutX="8.0" layoutY="346.0" text="Recent Posts">
+                      <Button alignment="CENTER" layoutX="20.0" layoutY="53.0" mnemonicParsing="false" prefWidth="135.0" text="Dashboard" />
+                      <Button alignment="CENTER" layoutX="20.0" layoutY="88.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Log" />
+                      <Button alignment="CENTER" layoutX="20.0" layoutY="359.0" mnemonicParsing="false" prefWidth="135.0" text="Profile" />
+                      <Button alignment="CENTER" layoutX="20.0" layoutY="123.0" mnemonicParsing="false" prefWidth="135.0" text="Hub" />
+               </children></AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="416.0">
+               <children>
+                      <Pane layoutX="279.0" layoutY="3.0" prefHeight="390.0" prefWidth="135.0" style="-fx-border-color: green; -fx-border-radius: 5;">
+                          <children>
+                              <Pane layoutX="13.0" layoutY="39.0" prefHeight="65.0" prefWidth="110.0" style="-fx-background-color: #BFD641; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                              <Pane layoutX="13.0" layoutY="109.0" prefHeight="65.0" prefWidth="110.0" style="-fx-background-color: #BFD641; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                        <Label layoutX="14.0" layoutY="14.0" text="To-Do:">
                            <font>
                               <Font size="14.0" />
                            </font>
@@ -51,11 +39,30 @@
                               <Insets left="5.0" right="5.0" />
                            </padding>
                         </Label>
-                            </children>
+                          </children>
+                  </Pane>
+                  <ScrollPane prefHeight="396.0" prefWidth="278.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="418.0" prefWidth="262.0">
+                           <children>
+                                      <Pane layoutX="4.0" layoutY="8.0" prefHeight="105.0" prefWidth="255.0" style="-fx-background-color: #78A0F7; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                                      <Pane layoutX="4.0" layoutY="118.0" prefHeight="105.0" prefWidth="255.0" style="-fx-background-color: #BFD641; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                                      <Pane layoutX="4.0" layoutY="228.0" prefHeight="105.0" prefWidth="255.0" style="-fx-background-color: #7DDA58; -fx-border-radius: 5; -fx-background-radius: 5;" />
+                                      <Pane layoutX="4.0" layoutY="363.0" prefHeight="50.0" prefWidth="255.0" style="-fx-border-radius: 5; -fx-border-color: #BFD641;" />
+                              <Label layoutX="4.0" layoutY="338.0" text="Recent Posts">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="5.0" right="5.0" />
+                                 </padding>
+                              </Label>
+                           </children>
                         </AnchorPane>
                     </content>
-                </ScrollPane>
-            </children>
-        </Pane>
+                  </ScrollPane>
+               </children></AnchorPane>
+        </items>
+      </SplitPane>
     </children>
 </AnchorPane>
