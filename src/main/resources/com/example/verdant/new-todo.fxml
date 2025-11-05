@@ -24,7 +24,27 @@
                   <Button layoutX="20.0" layoutY="123.0" mnemonicParsing="false" prefWidth="135.0" text="Hub" />
                   <Button layoutX="20.0" layoutY="359.0" mnemonicParsing="false" prefWidth="135.0" text="Profile" />
                </children></AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="416.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="416.0">
+               <children>
+                  <Pane layoutX="280.0" layoutY="3.0" prefHeight="390.0" prefWidth="135.0" style="-fx-border-color: green; -fx-border-radius: 5;">
+                     <children>
+                        <Label layoutX="14.0" layoutY="10.0" text="To-Do:">
+                           <padding>
+                              <Insets bottom="2.0" left="5.0" right="5.0" top="2.0" />
+                           </padding>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="13.0" layoutY="39.0" prefHeight="65.0" prefWidth="110.0" style="-fx-background-color: #BFD641; -fx-background-radius: 5;" />
+                        <Pane layoutX="13.0" layoutY="109.0" prefHeight="65.0" prefWidth="110.0" style="-fx-background-color: #BFD641; -fx-background-radius: 5;" />
+                     </children></Pane>
+                  <ScrollPane prefHeight="398.0" prefWidth="278.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="433.0" prefWidth="262.0" />
+                    </content>
+                  </ScrollPane>
+               </children></AnchorPane>
         </items>
       </SplitPane>
    </children>
