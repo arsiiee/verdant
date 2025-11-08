@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
@@ -38,6 +39,10 @@
                                  <font>
                                     <Font size="14.0" />
                                  </font></Button>
+                              <ImageView fitHeight="30.0" fitWidth="29.0" layoutX="29.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="29.0" AnchorPane.topAnchor="19.0">
+                                 <image>
+                                    <Image url="@photos/Untitled%20design%20(5).png" />
+                                 </image></ImageView>
                            </children>
                         </AnchorPane>
                         <AnchorPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
