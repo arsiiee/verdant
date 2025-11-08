@@ -5,10 +5,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class NewTodo extends Application {
+public class NewDashboard extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(DashboardFeature.class.getResource("new-todo.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(NewDashboard.class.getResource("new-dashboard.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Hello!");
         stage.setScene(scene);
