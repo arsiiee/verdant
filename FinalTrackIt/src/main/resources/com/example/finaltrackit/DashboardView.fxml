@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25" fx:controller="com.verdant.DashboardController">
+
+    <left>
+        <VBox prefHeight="524.0" prefWidth="180" spacing="20" style="-fx-background-color: #f2f1eb; -fx-border-color: #d0d0c7;">
+            <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-padding: 20 0 0 20;" text="Verdant" />
+            <VBox alignment="TOP_LEFT" spacing="10" style="-fx-padding: 20;">
+                <Button maxWidth="Infinity" style="-fx-background-color: #e9e8e3; -fx-font-weight: bold;" text="📊 Dashboard" />
+                <Button maxWidth="Infinity" style="-fx-background-color: transparent;" text="🪴 Log" />
+                <Button maxWidth="Infinity" style="-fx-background-color: transparent;" text="🌿 Hub" />
+            </VBox>
+         <AnchorPane prefHeight="440.0" prefWidth="178.0">
+            <children>
+               <Button layoutX="35.0" layoutY="351.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="108.0" style="-fx-background-color: white;" text="Ars Zoe" />
+               <ImageView fitHeight="21.0" fitWidth="23.0" layoutX="42.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+         </AnchorPane>
+        </VBox>
+    </left>
+
+    <center>
+        <VBox spacing="15" style="-fx-padding: 15;">
+
+            <HBox spacing="15">
+                <VBox prefWidth="350" style="-fx-background-color: #d8ebf2; -fx-background-radius: 10; -fx-padding: 15;">
+                    <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Welcome!" />
+                    <Label style="-fx-font-size: 16px;" text="Monday" />
+                    <Label style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #333;" text="93°F (34°C)" />
+                    <Separator />
+                    <Label text="Precipitation Chance: 20%" />
+                    <Label text="Wind: 4–12 mph NE" />
+                    <Label text="Humidity: 70%" />
+                    <Label text="Sunrise: 5:32 AM" />
+                    <Label text="Sunset: 5:44 PM" />
+                </VBox>
+
+                <VBox prefWidth="350" style="-fx-background-color: #b6ccd6; -fx-background-radius: 10; -fx-padding: 15;">
+                    <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: white;" text="Cagayan de Oro" />
+                    <Label style="-fx-font-size: 16px; -fx-text-fill: white;" text="Mostly Cloudy" />
+                </VBox>
+            </HBox>
+
+            <VBox spacing="8" style="-fx-background-color: #f3efea; -fx-background-radius: 10; -fx-padding: 15;">
+                <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Events" />
+                <VBox spacing="10">
+                    <VBox style="-fx-background-color: #d7c9a9; -fx-background-radius: 10; -fx-padding: 10;">
+                        <Label style="-fx-font-weight: bold;" text="Northern Mindanao Agriculture and Fisheries Technology Forum and Exhibition (AgriExpo)" wrapText="true" />
+                        <Label style="-fx-font-size: 12px;" text="October 20, 2025 — Limketkai Mall Convention Center" />
+                        <Label style="-fx-font-style: italic;" text="“Empowering Farmers Through AgriTech”" />
+                    </VBox>
+                    <VBox style="-fx-background-color: #c7b48e; -fx-background-radius: 10; -fx-padding: 10;">
+                        <Label style="-fx-font-weight: bold;" text="Mindanao AgriTrade Expo" wrapText="true" />
+                        <Label style="-fx-font-size: 12px;" text="September 20, 2025 — Limketkai Mall Convention Center" />
+                        <Label style="-fx-font-style: italic;" text="“Sustainable Agri-business for Mindanao’s Future”" />
+                    </VBox>
+                </VBox>
+            </VBox>
+
+            <VBox spacing="10" style="-fx-background-color: #f6f5f3; -fx-background-radius: 10; -fx-padding: 15;">
+                <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Recipes for the Day" />
+                <HBox spacing="10">
+                    <VBox prefWidth="180" style="-fx-background-color: #ffffff; -fx-background-radius: 10; -fx-padding: 10;">
+                        <Label style="-fx-font-weight: bold;" text="Pinakbet with Organic Vegetables" wrapText="true" />
+                        <Label style="-fx-font-size: 12px;" text="Highlights: squash, eggplant, and string beans." wrapText="true" />
+                    </VBox>
+                    <VBox prefWidth="180" style="-fx-background-color: #ffffff; -fx-background-radius: 10; -fx-padding: 10;">
+                        <Label style="-fx-font-weight: bold;" text="Banana Blossom 'Pulotan' Patties" wrapText="true" />
+                        <Label style="-fx-font-size: 12px;" text="Turning seasonal banana blossoms into plant-based treats." wrapText="true" />
+                    </VBox>
+                    <VBox prefWidth="180" style="-fx-background-color: #ffffff; -fx-background-radius: 10; -fx-padding: 10;">
+                        <Label style="-fx-font-weight: bold;" text="Pinakbet with Organic Vegetables" wrapText="true" />
+                        <Label style="-fx-font-size: 12px;" text="Highlights: squash, eggplant, and string beans." wrapText="true" />
+                    </VBox>
+                </HBox>
+            </VBox>
+
+        </VBox>
+    </center>
+
+    <right>
+        <VBox spacing="10" style="-fx-background-color: #f2f1eb; -fx-padding: 15;">
+            <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="To-do:" />
+            <VBox spacing="10">
+                <VBox style="-fx-background-color: #c9d5b8; -fx-background-radius: 10; -fx-padding: 10;">
+                    <Label style="-fx-font-weight: bold;" text="Sept 14, 2025" />
+                    <Label style="-fx-font-size: 12px;" text="Turn compost pile, add rice husk for aeration." wrapText="true" />
+                </VBox>
+                <VBox style="-fx-background-color: #c9d5b8; -fx-background-radius: 10; -fx-padding: 10;">
+                    <Label style="-fx-font-weight: bold;" text="Sept 14, 2025" />
+                    <Label style="-fx-font-size: 12px;" text="Turn compost pile, add rice husk for aeration." wrapText="true" />
+                </VBox>
+                <VBox style="-fx-background-color: #c9d5b8; -fx-background-radius: 10; -fx-padding: 10;">
+                    <Label style="-fx-font-weight: bold;" text="Sept 14, 2025" />
+                    <Label style="-fx-font-size: 12px;" text="Turn compost pile, add rice husk for aeration." wrapText="true" />
+                </VBox>
+            </VBox>
+        </VBox>
+    </right>
+</BorderPane>

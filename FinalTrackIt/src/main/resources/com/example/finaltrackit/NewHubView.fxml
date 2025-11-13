@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml">
+
+    <!-- Left Sidebar -->
+    <left>
+        <VBox spacing="20" prefWidth="180"
+              style="-fx-background-color: #f2f1eb; -fx-border-color: #d0d0c7;">
+            <Label text="Verdant"
+                   style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-padding: 20 0 0 20;" />
+            <VBox spacing="10" alignment="TOP_LEFT" style="-fx-padding: 20;">
+                <Button text="📊 Dashboard" maxWidth="Infinity" style="-fx-background-color: transparent;"/>
+                <Button text="🪴 Log" maxWidth="Infinity" style="-fx-background-color: transparent;"/>
+                <Button text="🌿 Hub" maxWidth="Infinity" style="-fx-background-color: #e9e8e3; -fx-font-weight: bold;"/>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" spacing="10" style="-fx-padding: 40 0 20 0;">
+                <ImageView fitWidth="60" fitHeight="60"/>
+                <Label text="Ars Zoe" style="-fx-font-size: 13px; -fx-font-weight: bold;"/>
+            </VBox>
+        </VBox>
+    </left>
+
+    <!-- Center Content -->
+    <center>
+        <VBox spacing="10" style="-fx-padding: 15;">
+            <!-- Header -->
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Label text="Forums" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <TextField promptText="Search"
+                           style="-fx-background-radius: 15; -fx-pref-width: 250;"/>
+            </HBox>
+
+            <!-- Forum Feed -->
+            <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;">
+                <VBox spacing="10" padding="10" style="-fx-background-color: transparent;">
+
+                    <!-- Post 1 -->
+                    <VBox spacing="5" style="-fx-background-color: #ffffff; -fx-background-radius: 10; -fx-padding: 10;">
+                        <HBox spacing="10" alignment="CENTER_LEFT">
+                            <ImageView fitWidth="30" fitHeight="30"/>
+                            <Label text="@" style="-fx-font-weight: bold;"/>
+                            <Label text="Bukidnon, Farmer" style="-fx-font-size: 12px; -fx-text-fill: #777;"/>
+                        </HBox>
+                        <Label text="Any tips on natural pest control for eggplants?"
+                               wrapText="true" style="-fx-padding: 5 0 0 40;"/>
+
+                        <!-- Reply -->
+                        <VBox spacing="5" style="-fx-background-color: #e3d5c2; -fx-background-radius: 10; -fx-padding: 10; -fx-margin: 5 0 0 40;">
+                            <HBox spacing="10" alignment="CENTER_LEFT">
+                                <ImageView fitWidth="25" fitHeight="25"/>
+                                <Label text="@" style="-fx-font-weight: bold;"/>
+                                <Label text="Organic Farmer" style="-fx-font-size: 12px; -fx-text-fill: #777;"/>
+                            </HBox>
+                            <Label text="Try neem oil spray — very effective and organic."
+                                   wrapText="true" style="-fx-padding: 5 0 0 35;"/>
+                        </VBox>
+                    </VBox>
+
+                    <!-- Post 2 -->
+                    <VBox spacing="5" style="-fx-background-color: #ffffff; -fx-background-radius: 10; -fx-padding: 10;">
+                        <HBox spacing="10" alignment="CENTER_LEFT">
+                            <ImageView fitWidth="30" fitHeight="30"/>
+                            <Label text="@" style="-fx-font-weight: bold;"/>
+                            <Label text="COO, Food Innovator" style="-fx-font-size: 12px; -fx-text-fill: #777;"/>
+                        </HBox>
+                        <Label text="Where can I find organic ginger suppliers for my tea business?"
+                               wrapText="true" style="-fx-padding: 5 0 0 40;"/>
+
+                        <!-- Reply -->
+                        <VBox spacing="5" style="-fx-background-color: #e3d5c2; -fx-background-radius: 10; -fx-padding: 10; -fx-margin: 5 0 0 40;">
+                            <HBox spacing="10" alignment="CENTER_LEFT">
+                                <ImageView fitWidth="25" fitHeight="25"/>
+                                <Label text="@" style="-fx-font-weight: bold;"/>
+                                <Label text="Cagayan" style="-fx-font-size: 12px; -fx-text-fill: #777;"/>
+                            </HBox>
+                            <Label text="I have fresh organic ginger harvest available next week."
+                                   wrapText="true" style="-fx-padding: 5 0 0 35;"/>
+                        </VBox>
+                    </VBox>
+
+                    <!-- Post 3 -->
+                    <VBox spacing="5" style="-fx-background-color: #ffffff; -fx-background-radius: 10; -fx-padding: 10;">
+                        <HBox spacing="10" alignment="CENTER_LEFT">
+                            <ImageView fitWidth="30" fitHeight="30"/>
+                            <Label text="@" style="-fx-font-weight: bold;"/>
+                            <Label text="Agri Educator" style="-fx-font-size: 12px; -fx-text-fill: #777;"/>
+                        </HBox>
+                        <Label text="Guide to composting small urban spaces."
+                               wrapText="true" style="-fx-padding: 5 0 0 40;"/>
+
+                        <!-- Reply -->
+                        <VBox spacing="5" style="-fx-background-color: #e3d5c2; -fx-background-radius: 10; -fx-padding: 10; -fx-margin: 5 0 0 40;">
+                            <HBox spacing="10" alignment="CENTER_LEFT">
+                                <ImageView fitWidth="25" fitHeight="25"/>
+                                <Label text="@" style="-fx-font-weight: bold;"/>
+                                <Label text="Urban Gardener" style="-fx-font-size: 12px; -fx-text-fill: #777;"/>
+                            </HBox>
+                            <Label text="I use a simple bucket system with kitchen scraps — works well in small apartments."
+                                   wrapText="true" style="-fx-padding: 5 0 0 35;"/>
+                        </VBox>
+                    </VBox>
+                </VBox>
+            </ScrollPane>
+        </VBox>
+    </center>
+
+</BorderPane>
