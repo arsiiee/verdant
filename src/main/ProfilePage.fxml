@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="800.0" style="-fx-background-color: #364025;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+   <children>
+      <AnchorPane layoutX="11.0" layoutY="11.0" prefHeight="660.0" prefWidth="778.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="190.0" prefHeight="47.0" prefWidth="191.0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-padding: 20 0 0 20;" text="My Profile" />
+            <AnchorPane layoutX="210.0" layoutY="71.0" prefHeight="155.0" prefWidth="283.0" style="-fx-border-radius: 5; -fx-border-color: gray; -fx-background-color: #E6D7C4;">
+               <children>
+                  <Circle layoutX="69.0" layoutY="70.0" radius="40.0" stroke="BLACK" strokeType="INSIDE">
+                     <fill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop>
+                                 <color>
+                                    <Color red="0.640350878238678" green="0.5948938727378845" blue="0.5948938727378845" />
+                                 </color>
+                              </Stop>
+                              <Stop offset="1.0">
+                                 <color>
+                                    <Color red="0.9298245906829834" green="0.9298245906829834" blue="0.9298245906829834" />
+                                 </color>
+                              </Stop>
+                           </stops>
+                        </RadialGradient>
+                     </fill>
+                  </Circle>
+                  <Label layoutX="134.0" layoutY="42.0" prefHeight="27.0" prefWidth="88.0" text="Ars Zoe">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="134.0" layoutY="69.0" text="arszoe@gmail.com" />
+               </children>
+            </AnchorPane>
+            <Button layoutX="650.0" layoutY="24.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" style="-fx-background-color: #899064;" text="Edit Profile" />
+            <AnchorPane layoutX="312.0" layoutY="314.0" prefHeight="156.0" prefWidth="326.0" style="-fx-border-color: Black; -fx-border-radius: 10;">
+               <children>
+                  <Label layoutX="19.0" layoutY="17.0" prefHeight="17.0" prefWidth="76.0" text="LogOut">
+                     <font>
+                        <Font name="Georgia Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="43.0" layoutY="58.0" prefHeight="17.0" prefWidth="266.0" text="Are you sure you want to log out?">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="94.0" layoutY="92.0" mnemonicParsing="false" style="-fx-background-color: #899064;" text="Yes">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="171.0" layoutY="93.0" mnemonicParsing="false" style="-fx-background-color: #E6D7C480;" text="No">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <VBox layoutX="10.0" layoutY="11.0" prefHeight="660.0" prefWidth="181.0" spacing="20" style="-fx-background-color: #f2f1eb; -fx-border-color: #d0d0c7;">
+         <children>
+            <Label style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-padding: 20 0 0 20;" text="Verdant" />
+            <VBox alignment="TOP_LEFT" prefHeight="145.0" prefWidth="177.0" spacing="10" style="-fx-padding: 20;">
+               <children>
+                  <Button maxWidth="Infinity" style="-fx-background-color: #e9e8e3; -fx-font-weight: bold;" text="📊 Dashboard" />
+                  <Button maxWidth="Infinity" style="-fx-background-color: transparent;" text="🪴 Log" />
+                  <Button maxWidth="Infinity" style="-fx-background-color: transparent;" text="🌿 Hub" />
+                  <Button maxWidth="Infinity" style="-fx-background-color: transparent;" text="Profile" />
+               </children>
+            </VBox>
+            <AnchorPane layoutX="10.0" layoutY="10.0" pickOnBounds="false" prefHeight="408.0" prefWidth="189.0">
+               <children>
+                  <ImageView fitHeight="21.0" fitWidth="23.0" layoutX="42.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true" />
+                  <Button layoutX="59.0" layoutY="347.0" mnemonicParsing="false" style="-fx-background-color: #899064;" text="Sign out" />
+               </children>
+               <opaqueInsets>
+                  <Insets bottom="20.0" />
+               </opaqueInsets>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

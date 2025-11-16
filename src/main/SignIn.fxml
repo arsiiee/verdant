@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="800.0" style="-fx-background-color: #364025;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+   <children>
+      <AnchorPane layoutX="11.0" layoutY="12.0" prefHeight="521.0" prefWidth="778.0" style="-fx-background-color: white;">
+         <children>
+            <AnchorPane layoutX="90.0" layoutY="42.0" prefHeight="444.0" prefWidth="600.0" style="-fx-border-color: black; -fx-border-radius: 20;">
+               <children>
+                  <Label layoutX="228.0" layoutY="37.0" text="VERDANT" textFill="#899064">
+                     <font>
+                        <Font name="Times New Roman Bold" size="35.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="246.0" layoutY="80.0" text="Sign in to continue">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="62.0" layoutY="115.0" text="Email" textFill="#899064">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="62.0" layoutY="151.0" prefHeight="54.0" prefWidth="489.0" text="Enter email" />
+                  <Label layoutX="66.0" layoutY="230.0" text="Password" textFill="#899064">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <PasswordField layoutX="68.0" layoutY="264.0" prefHeight="56.0" prefWidth="484.0" text="Enter Password" />
+                  <Button layoutX="271.0" layoutY="348.0" mnemonicParsing="false" style="-fx-background-color: #899064;" text="Sign in">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="249.0" layoutY="396.0" text="Forgot Password?">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
