@@ -9,6 +9,7 @@ module com.example.verdant {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires jdk.xml.dom;
 
     opens com.example.verdant to javafx.fxml;
     exports com.example.verdant;

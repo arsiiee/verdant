@@ -11,34 +11,17 @@ import javafx.scene.shape.Rectangle;
 
 import java.io.IOException;
 
-public class LogPageController {
+public class HubController {
     @FXML
     private StackPane rootStack;
     @FXML
     private AnchorPane popupLayer;
-    @FXML
-    private Button newLogBtn;
-    @FXML
-    private void addLogClick() throws IOException {
-        Parent popup = FXMLLoader.load(getClass().getResource("NewLog.fxml"));
-        popupLayer.getChildren().setAll(popup);
-
-        Rectangle overlay = new Rectangle(rootStack.getWidth(), rootStack.getHeight());
-        overlay.setFill(Color.rgb(0,0,0,0.4));
-        popupLayer.getChildren().clear();
-        popupLayer.getChildren().add(overlay);
-        popupLayer.getChildren().add(popup);
-
-        if (!popupLayer.getChildren().contains(popup)) {
-            popupLayer.getChildren().add(popup);
-        }
-    }
 
     @FXML
-    private Button newPlanBtn;
+    private Button createPostBtn;
     @FXML
-    private void addPlanClick() throws IOException {
-        Parent popup = FXMLLoader.load(getClass().getResource("NewPlan.fxml"));
+    private void createPostClick() throws IOException {
+        Parent popup = FXMLLoader.load(getClass().getResource("NewPosts.fxml"));
         popupLayer.getChildren().setAll(popup);
 
         Rectangle overlay = new Rectangle(rootStack.getWidth(), rootStack.getHeight());
